@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF118437"
+    tools:context=".AnimalsQuiz1">
+
+    <TextView
+        android:id="@+id/txtAnimalsQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="34dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="ANIMALS QUIZ"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewAnimals2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalsQuiz"
+        app:srcCompat="@drawable/animals_quiz_display_1" />
+
+    <TextView
+        android:id="@+id/txtTipQuizAnimals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="(TOGGLE THE SWITCH TO PLAY THE ANIMAL SOUND)"
+        android:textColor="#87000000"
+        android:textSize="14.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewAnimals2" />
+
+    <TextView
+        android:id="@+id/txtAnimalsQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="121dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Q2 - WHICH ANIMAL DID YOU HEAR?"
+        android:textColor="#FFD700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipQuizAnimals" />
+
+    <Button
+        android:id="@+id/btnSaveAnimal2"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="86dp"
+        android:backgroundTint="#F5004B"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0"
+        android:onClick="onSave"
+        android:text="Save Answer"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:cornerRadius="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupAnimal2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAnimal2"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalsQ2">
+
+        <RadioButton
+            android:id="@+id/radLion2"
+            android:buttonTint="@color/radio_filled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lion" />
+
+        <RadioButton
+            android:id="@+id/radCow2"
+            android:buttonTint="@color/radio_filled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cow" />
+
+        <RadioButton
+            android:id="@+id/radPig2"
+            android:buttonTint="@color/radio_filled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Pig" />
+
+        <RadioButton
+            android:id="@+id/radElephant2"
+            android:buttonTint="@color/radio_filled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Elephant" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switchCow"
+        android:thumbTint="@color/radio_filled"
+        android:trackTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:onClick="onSwitchClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAnimalsQ2"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipQuizAnimals" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AstronomyQuiz2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CF161184"
+        tools:context=".AstronomyQuiz1">
+
+        <TextView
+            android:id="@+id/txtAstronomyQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="34dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="ASTRONOMY QUIZ"
+            android:textColor="#FFD700"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgViewPlanetDisplay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="29dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstronomyQuiz"
+            app:srcCompat="@drawable/planet_display" />
+
+        <TextView
+            android:id="@+id/txtTipQuizAstro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="29dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="(CLICK ON A BUTTON TO SELECT YOUR ANSWER)"
+            android:textColor="#ac9206"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewPlanetDisplay2" />
+
+        <TextView
+            android:id="@+id/txtAstroQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="121dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Q2 - WHAT IS THE NAME OF PLANET 2?"
+            android:textColor="#FFD700"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTipQuizAstro" />
+
+        <Button
+            android:id="@+id/btnSaveAstro2"
+            android:layout_width="210dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="86dp"
+            android:backgroundTint="#F5004B"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0"
+            android:onClick="onSave"
+            android:text="Save Answer"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            app:cornerRadius="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupTop2" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTop2"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroQ2">
+
+            <RadioButton
+                android:id="@+id/radEarthQuiz2"
+                android:buttonTint="@color/radio_filled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Earth"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radJupiterQuiz2"
+                android:buttonTint="@color/radio_filled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jupiter"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radSaturnQuiz2"
+                android:buttonTint="@color/radio_filled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saturn"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radNeptuneQuiz2"
+                android:buttonTint="@color/radio_filled"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Neptune"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AstronomyQuizResults">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CF161184"
+        tools:context="imraan.imraan.thinkbright.AnimalQuizResults">
+
+        <Button
+            android:id="@+id/btnClearAstroResults"
+            android:layout_width="210dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="101dp"
+            android:backgroundTint="#F5004B"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0"
+            android:onClick="onClearClick"
+            android:text="Clear Results"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            app:cornerRadius="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroScoreTotal" />
+
+        <TextView
+            android:id="@+id/txtAstroScoreTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="168dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="/4"
+            android:textColor="#FFD700"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroYourScore" />
+
+        <TextView
+            android:id="@+id/txtAstroScoreTotalCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFD700"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroYourScore" />
+
+        <TextView
+            android:id="@+id/txtAstroYourScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="143dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Your Score"
+            android:textColor="#D5D5D5"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listViewAstroResultsBox" />
+
+        <ListView
+            android:id="@+id/listViewAstroResultsBox"
+            android:layout_width="1200px"
+            android:layout_height="775px"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="30dp"
+            android:background="#BCBEDF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroQuizResultHeader"
+            app:srcCompat="@drawable/animal_results_box">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/txtAstroQuizResultHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="130dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Astronomy Quiz"
+            android:textColor="#FFD700"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuizResultHeader" />
+
+        <TextView
+            android:id="@+id/txtListHeaders2"
+            android:layout_width="343dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:background="#BCBEDF"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Q#         Your Answer         Correct Answer"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAstroQuizResultHeader" />
+
+        <ImageView
+            android:id="@+id/imgViewAstroStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgViewAstroStar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/txtQuizResultHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="145dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="QUIZ RESULTS"
+            android:textColor="#FFD700"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAstroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtAstroQuizResultHeader"
+            app:layout_constraintEnd_toEndOf="@+id/imgViewAstroStar2"
+            app:layout_constraintStart_toStartOf="@+id/imgViewAstroStar"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuizResultHeader" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fl_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="96dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="413dp"
+                android:layout_height="61dp"
+                android:background="#000000"
+                app:itemBackground="@color/nav_bar"
+                app:itemIconTint="#000000"
+                app:itemTextColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/nav_menu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

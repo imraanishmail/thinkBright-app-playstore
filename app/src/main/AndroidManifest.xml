@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="imraan.imraan.thinkbright">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/playstore_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ThinkBright">
+        <activity android:name=".AstronomyQuizResults"/>
+        <activity android:name="imraan.imraan.thinkbright.AnimalQuizResults" />
+        <activity android:name=".Welcome1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AnimalsQuiz4" />
+        <activity android:name=".AnimalsQuiz3" />
+        <activity android:name=".AnimalsQuiz2" />
+        <activity android:name=".AnimalsQuiz1" />
+        <activity android:name=".LearningAnimals" />
+        <activity android:name=".AstronomyQuiz4" />
+        <activity android:name=".AstronomyQuiz3" />
+        <activity android:name=".AstronomyQuiz2" />
+        <activity android:name=".AstronomyQuiz1" >
+
+        </activity>
+        <activity android:name=".LearningAstronomy" />
+        <activity android:name=".Quizzes" />
+        <activity android:name=".UserDetails" />
+        <activity android:name=".Loading" />
+        <activity android:name="imraan.imraan.thinkbright.AboutUs3" />
+        <activity android:name="imraan.imraan.thinkbright.AboutUs2" />
+        <activity android:name="imraan.imraan.thinkbright.AboutUs1" />
+        <activity android:name=".Welcome2" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

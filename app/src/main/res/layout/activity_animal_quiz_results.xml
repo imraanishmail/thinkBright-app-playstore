@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF118437"
+    tools:context="imraan.imraan.thinkbright.AnimalQuizResults">
+
+    <Button
+        android:id="@+id/btnClearAnimalResults"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="#F5004B"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0"
+        android:onClick="onClearClick"
+        android:text="Clear Results"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:cornerRadius="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalScoreTotal" />
+
+    <TextView
+        android:id="@+id/txtAnimalScoreTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="/4"
+        android:textColor="#FFD700"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalYourScore" />
+
+    <TextView
+        android:id="@+id/txtAnimalScoreTotalCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#FFD700"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalYourScore" />
+
+    <TextView
+        android:id="@+id/txtAnimalYourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="143dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your Score"
+        android:textColor="#CF000000"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewAnimalResultsBox" />
+
+    <ListView
+        android:id="@+id/listViewAnimalResultsBox"
+        android:layout_width="1200px"
+        android:layout_height="775px"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="31dp"
+        android:background="#BCBEDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalQuizResultHeader"
+        app:srcCompat="@drawable/animal_results_box" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtAnimalQuizResultHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Animals Quiz"
+        android:textColor="#FFD700"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuizResultHeader" />
+
+    <TextView
+        android:id="@+id/txtListHeaders"
+        android:layout_width="343dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:background="#BCBEDF"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Q#         Your Answer         Correct Answer"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnimalQuizResultHeader" />
+
+    <TextView
+        android:id="@+id/txtAnimalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#FFD700"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAnimalQuizResultHeader"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewAnimalStar2"
+        app:layout_constraintStart_toStartOf="@+id/imgViewAnimalStar"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuizResultHeader" />
+
+    <ImageView
+        android:id="@+id/imgViewAnimalStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/imgViewAnimalStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/txtQuizResultHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="QUIZ RESULTS"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="413dp"
+            android:layout_height="61dp"
+            android:background="#000000"
+            app:itemBackground="@color/nav_bar"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
